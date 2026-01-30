@@ -6,6 +6,10 @@
 *.lo
 *.o
 *.obj
+*.fbx
+*.targa
+*.png
+*.glb
 
 # Precompiled Headers
 *.gch
@@ -40,7 +44,6 @@
 *.sdf
 *.VC.db
 *.VC.opendb
-.vsconfig
 
 # Precompiled Assets
 SourceArt/**/*.png
@@ -48,10 +51,11 @@ SourceArt/**/*.tga
 
 # Binary Files
 Binaries/*
-Plugins/**/Binaries/*
+Plugins/*/Binaries/*
 
 # Builds
 Build/*
+Shipping/*
 
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !Build/*/
@@ -69,7 +73,18 @@ Saved/*
 
 # Compiled source files for the engine to use
 Intermediate/*
-Plugins/**/Intermediate/*
+Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+MigrateProject.uproject
+
+
+# Not needed in the repo
+*.psd
+*.wav
+*.targa
+*.png
+*.tga
+*.wav
+*.mp3
